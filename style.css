@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+  background-image: url(images/wp4358271-philosophers-wallpapers.jpg);
+  font-family: 'Kanit', serif;
+  background-color: hsla(306, 91%, 24%, 1);
+  color: white;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 5vh;
+  background-color: hsla(306, 91%, 24%, 1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+nav h2 {
+  padding: 0.5rem;
+  font-size: 3.1rem;
+  font-weight: normal;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 0.7rem;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 1.7rem;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1,
+#welcome-section-p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bolder;
+}
+
+#welcome-section-p {
+  font-size: 2rem;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+#info {
+  display: flex;
+  height: 60vh;
+}
+
+#about-me p {
+  display: inline-block;
+  font-size: 2.3rem;
+  padding: 3rem;
+  text-align: justify;
+}
+
+#about-me img {
+  padding: 0.5rem;
+  max-width: 70rem;
+  max-height: 30rem;
+  border-radius: 1.3rem;
+}
+
+i {
+  font-size: 2.3rem;
+  margin-right: 4.5rem;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+svg {
+  margin-left: 8rem;
+  padding: 1rem;
+  animation: rotate 3s linear infinite;
+}
+
+#projects {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+#projects-description p {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+
+#projects-description span {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
