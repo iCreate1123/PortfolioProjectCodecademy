@@ -29,6 +29,7 @@ nav {
 }
 
 nav h2 {
+  margin-left: 1rem;
   padding: 0.5rem;
   font-size: 3.3rem;
   font-weight: normal;
@@ -77,10 +78,11 @@ h1 {
 #info {
   display: flex;
   height: 60vh;
+  margin-bottom: 1.5rem;
 }
 
 #about-me p {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 3rem;
   padding: 3rem;
   text-align: justify;
@@ -96,7 +98,9 @@ h1 {
 #skills {
   text-align: center;
 }
-
+#about-me-skills-paragraph {
+  display: inline;
+}
 i {
   font-size: 4rem;
   margin-right: 4.5rem;
@@ -131,22 +135,17 @@ i {
 }
 
 #projects-description p {
-  font-size: 3rem;
+  font-size: 4.4rem;
   padding-right: 1rem;
 }
 
 #projects-description span {
-  font-size: 1rem;
-  margin-right: 1rem;
+  font-size: 1.4rem;
+  margin-right: 1.5rem;
 }
 
 #contact-me {
-  height: 90vh;
-}
-
-#line-svg {
-  margin-top: 5rem;
-  margin-left: 13rem;
+  height: 80vh;
 }
 
 #contact-me-container,
@@ -188,9 +187,111 @@ i {
 
 @media screen and (max-width: 2560px) {
   header h2 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
+
   nav ul li {
     font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 13rem;
+  }
+
+  #projects-description p {
+    font-size: 6rem;
+  }
+
+  #contact-me-container {
+    margin-top: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #projects-description p {
+    font-size: 4rem;
+  }
+  i {
+    margin-right: 3.7rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header h2 {
+    font-size: 4rem;
+  }
+
+  nav ul li {
+    font-size: 2rem;
+  }
+  nav ul {
+    gap: 8.5rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+
+  #about-me p {
+    font-size: 2rem;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+
+  #projects-description p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav h2 {
+    font-size: 2.4rem;
+  }
+  nav ul li {
+    font-size: 1.3rem;
+  }
+  nav ul {
+    gap: 7rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+
+  #info p {
+    font-size: 1.6rem;
+  }
+
+  #projects-svg {
+    margin-left: 0.6rem;
+  }
+
+  #projects-description p {
+    font-size: 2.4rem;
+  }
+
+  #projects-description span {
+    font-size: 1rem;
+  }
+
+  #contact-me-container h2 {
+    font-size: 2.3rem;
+  }
+  #contact-me-container p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav h2 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    gap: 1.3rem;
   }
 }
