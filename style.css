@@ -155,9 +155,33 @@ i {
   align-items: flex-end;
 }
 
-#projects-description p {
+#stoic-quotes,
+#drivers-club,
+#iShoot {
   font-size: 4.4rem;
   padding-right: 1rem;
+  cursor: pointer;
+}
+/* pop up on click container plus X button */
+#stoic-container {
+  position: relative;
+  border: solid white 2px;
+  max-width: 46.4375rem;
+  max-height: 35.25rem;
+}
+.projects-info {
+  padding-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+button {
+  right: 0;
+  position: absolute;
+  padding: 0.4rem;
+  border-radius: 5rem;
+}
+#project-info img {
+  margin: auto 0;
 }
 
 #projects-description span {
@@ -219,7 +243,9 @@ i {
     font-size: 13rem;
   }
 
-  #projects-description p {
+  #stoic-quotes,
+  #drivers-club,
+  #iShoot {
     font-size: 6rem;
   }
 
@@ -229,7 +255,9 @@ i {
 }
 
 @media screen and (max-width: 1440px) {
-  #projects-description p {
+  #stoic-quotes,
+  #drivers-club,
+  #iShoot {
     font-size: 4rem;
   }
   nav ul li {
@@ -263,7 +291,9 @@ i {
     font-size: 2rem;
   }
 
-  #projects-description p {
+  #stoic-quotes,
+  #drivers-club,
+  #iShoot {
     font-size: 3rem;
   }
 }
@@ -291,7 +321,9 @@ i {
     margin-left: 0.6rem;
   }
 
-  #projects-description p {
+  #stoic-quotes,
+  #drivers-club,
+  #iShoot {
     font-size: 2.4rem;
   }
 
