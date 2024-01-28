@@ -1,17 +1,48 @@
-let stoicQuotes = document.getElementById("stoic-quotes")
-let driversClub = document.getElementById("drivers-club")
-let iShoot = document.getElementById("iShoot")
+//variables for navbar
+let home = document.getElementById("home")
+let aboutMe = document.getElementById("about")
+let projects = document.getElementById("projects")
+let contactMe = document.getElementById("contact-me")
+
+//variables sections 
+let homeSection = document.getElementById("welcome-section")
+let aboutMeSection = document.getElementById("about-me")
+let projectsSection = document.getElementById("projects-section")
+let contactMeSection = document.getElementById("contact-me-section")
 
 
-let stoicContainer = document.getElementById("stoic-container");
-// let projectsParagraphs = document.getElementsByClassName("projects-info");
-stoicContainer.style.display = "none"
+aboutMeSection.style.display = "none"
+projectsSection.style.display = "none"
+contactMeSection.style.display = "none"
 
-stoicQuotes.addEventListener("click", function() {
-    stoicContainer.style.display = "block";
-    stoicQuotes.style.display = "none";
+//functions 
+
+home.addEventListener("click", function() {
+    aboutMeSection.style.display = "none"
+    projectsSection.style.display = "none"
+    contactMeSection.style.display = "none"
+    homeSection.style.display = "flex"
 })
 
+aboutMe.addEventListener("click", function(){
+    homeSection.style.display = "none"
+    projectsSection.style.display = "none"
+    contactMeSection.style.display = "none"
+    aboutMeSection.style.display = "flex"
+})
 
+projects.addEventListener("click", function() {
+    homeSection.style.display = "none"
+    contactMeSection.style.display = "none"
+    aboutMeSection.style.display = "none"
+    projectsSection.style.display = "flex"
+})
 
-console.log(projectsParagraphs) 
+contactMe.addEventListener("click", function(){
+    homeSection.style.display = "none"
+    aboutMeSection.style.display = "none"
+    projectsSection.style.display = "none"
+    contactMeSection.style.display = "flex"
+})
+
+//eventlisteners 
