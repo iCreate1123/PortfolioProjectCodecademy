@@ -4,19 +4,19 @@ let aboutMe = document.getElementById("about")
 let projects = document.getElementById("projects")
 let contactMe = document.getElementById("contact-me")
 
+
 //variables sections 
 let homeSection = document.getElementById("welcome-section")
 let aboutMeSection = document.getElementById("about-me")
 let projectsSection = document.getElementById("projects-section")
 let contactMeSection = document.getElementById("contact-me-section")
 
-
 aboutMeSection.style.display = "none"
 projectsSection.style.display = "none"
 contactMeSection.style.display = "none"
 
-//functions 
 
+//event listeners to switch between sections
 home.addEventListener("click", function() {
     aboutMeSection.style.display = "none"
     projectsSection.style.display = "none"
@@ -24,12 +24,14 @@ home.addEventListener("click", function() {
     homeSection.style.display = "flex"
 })
 
+
 aboutMe.addEventListener("click", function(){
     homeSection.style.display = "none"
     projectsSection.style.display = "none"
     contactMeSection.style.display = "none"
     aboutMeSection.style.display = "flex"
 })
+
 
 projects.addEventListener("click", function() {
     homeSection.style.display = "none"
@@ -45,4 +47,12 @@ contactMe.addEventListener("click", function(){
     contactMeSection.style.display = "flex"
 })
 
-//eventlisteners 
+
+home.addEventListener("click", function(currrentSection){
+    
+})
+
+
+//FUNCTIONS 
+//function to show current section on navbar 
+

@@ -14,6 +14,30 @@ html {
   margin: 0;
 }
 
+#dot {
+  height: 18px;
+  width: 18px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#particles-js {
+  position: absolute;
+  z-index: -1;
+}
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  margin-block: 0.7em;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 1vw;
+  height: 0.1em;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -47,33 +71,23 @@ nav ul li {
   list-style-type: none;
   font-size: 1.9rem;
 }
-nav ul li a {
+
+nav ul li a,
+#projects-description a {
   text-decoration: none;
-  color: white;
+  color: rgb(246, 246, 246);
 }
 
-nav ul li:hover {
-  background-color: hsla(0, 0%, 98%, 20%);
-  border-radius: 1rem;
-  transform: scale(1.12);
-}
-::-webkit-scrollbar {
-  width: 1em;
-}
-::-webkit-scrollbar-track {
-  margin-block: 0.7em;
-}
-::-webkit-scrollbar-thumb {
-  background: white;
-  border-radius: 1vw;
-  height: 0.1em;
+nav ul li a:hover {
+  color: black;
+  transition: color 0.4s ease;
 }
 
 #welcome-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 h1,
@@ -154,6 +168,7 @@ i {
 #projects-section {
   margin-top: 5rem;
 }
+
 #projects-svg {
   margin-left: 8rem;
   padding: 1rem;
@@ -172,4 +187,23 @@ i {
   font-size: 4.4rem;
   padding-right: 1rem;
   cursor: pointer;
+}
+
+#projects-description a:hover {
+  color: black;
+  transition: color 0.4s ease;
+}
+
+span {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* contact me  */
+#contact-me-section,
+#contact-me-container {
+  display: flex;
+}
+
+#contact-me-container {
 }
