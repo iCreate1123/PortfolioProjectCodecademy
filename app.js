@@ -16,10 +16,10 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 100,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 400
         }
       },
       "color": {
@@ -32,7 +32,7 @@ particlesJS('particles-js',
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 12
         },
         "image": {
           "src": "img/github.svg",
@@ -41,7 +41,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0,
         "random": false,
         "anim": {
           "enable": false,
@@ -51,7 +51,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 5,
+        "value": 0.08,
         "random": true,
         "anim": {
           "enable": false,
@@ -62,15 +62,15 @@ particlesJS('particles-js',
       },
       "line_linked": {
         "enable": true,
-        "distance": 150,
+        "distance": 140,
         "color": "#ffffff",
-        "opacity": 1,
-        "width": 0.6
+        "opacity": 0.9,
+        "width": 0.7
       },
       "move": {
         "enable": true,
-        "speed": 6,
-        "direction": "none",
+        "speed": 4,
+        "direction": "top-right",
         "random": false,
         "straight": false,
         "out_mode": "out",
@@ -85,7 +85,7 @@ particlesJS('particles-js',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
