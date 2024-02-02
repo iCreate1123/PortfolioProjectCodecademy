@@ -112,8 +112,8 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-#about-me p {
-  font-size: 3rem;
+#about-me-paragraph {
+  font-size: 6rem;
   padding: 3rem;
   text-align: justify;
 }
@@ -239,6 +239,10 @@ span {
   nav ul li {
     font-size: 2.5rem;
   }
+  #about-me-skills-paragraph {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -246,7 +250,7 @@ span {
     font-size: 1.4rem;
   }
 
-  #about-me p {
+  #about-me-paragraph {
     font-size: 2.5rem;
     padding: 2rem;
   }
@@ -276,7 +280,7 @@ span {
     gap: 3.5rem;
   }
 
-  #about-me p {
+  #about-me-paragraph {
     font-size: 2rem;
   }
 
@@ -314,7 +318,7 @@ span {
     gap: 3rem;
   }
 
-  #about-me p {
+  #about-me-paragraph {
     font-size: 2rem;
   }
 
@@ -407,7 +411,7 @@ span {
   }
 }
 @media screen and (max-width: 375px) {
-  #about-me p {
+  #about-me-paragraph {
     font-size: 1.5rem;
   }
   #stoic-quotes,
@@ -418,5 +422,42 @@ span {
   }
   #contact-me-section h2 {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav h2 {
+    font-size: 1rem;
+  }
+  nav ul {
+    gap: 0.9rem;
+  }
+  nav ul li {
+    font-size: 0.65rem;
+  }
+
+  #about-me-paragraph {
+    font-size: 1.1rem;
+  }
+
+  #projects-svg {
+    margin-left: 0rem;
+  }
+
+  #stoic-quotes,
+  #drivers-club,
+  #iShoot {
+    font-size: 0.7rem;
+    padding-right: 0.22rem;
+  }
+
+  #contact-me-section h2 {
+    font-size: 0.9rem;
+  }
+
+  #contact-me-section p {
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 200;
   }
 }
